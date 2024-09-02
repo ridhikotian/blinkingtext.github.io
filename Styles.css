@@ -1,0 +1,67 @@
+b/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    }
+    /* Global Styles */
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    }
+    header {
+    background-color: #000000;
+    color: #ffffff; 
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .blinking-text {
+        text-align: center;
+        margin-top: 2%;
+        font-size: 24px;
+        color: #000000;
+        animation: blink 1s infinite; 
+    }
+    
+    
+
+        .center {
+            
+            transform: rotate(deg);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 10%;
+          }
+
+         .rotate {
+            animation: rotation 9s infinite linear;
+          }
+          @keyframes rotation {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }  
+        
+        
+        footer {
+        text-align: center;
+        padding: 1rem 0;
+        background-color: #444;
+        color: #fff;
+        }
+
+       
